@@ -1,13 +1,15 @@
 import Menu from "../organisms/Menu"
-import UserMainText from "../atoms/UserMainText"
-import UserMain from "../organisms/UserMain"
+import UserList from "../molecules/UserList"
+import UserHeader from "../molecules/UserHeader"
 
-export default function UserTemplate(){
-  return(
-    <div className="flex">
-      <Menu />
-      <UserMainText />
-      <UserMain />
-    </div>
+export default function UserTemplate() {
+  return (
+      <div className="flex">
+          <Menu />
+          <div className="w-screen">
+              <UserHeader />
+              <UserList />
+          </div>
+      </div>
   )
 }

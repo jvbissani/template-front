@@ -1,10 +1,9 @@
-import UserEmail from "../atoms/UserEmail";
-import UserName from "../atoms/UserName";
+import UserLine from "./UserLine";
 
-export default function (){
-  return <div className="flex gap-3 items-baseline px-4 py-2">
-    <UserName/>
-    <UserEmail/>
-  </div>
-
+export default function UserList() {
+  return (
+    <div className="flex flex-col p-7 items-center gap-5 cursor-pointer w-full">
+      <UserLine />  
+    </div>
+  );
 }

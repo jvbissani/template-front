@@ -1,5 +1,12 @@
-import { FaUser } from "react-icons/fa6";
+import { FiUser } from "react-icons/fi";
 
-export default function HomeIcon() {
-  return <FaUser />;
-};
+export interface UserIconProps {
+    size: number,
+    stroke: number
+}
+
+export default function UserIcon(props: UserIconProps) {
+    return (
+        <FiUser size={props.size}/>
+    )
+}

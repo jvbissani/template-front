@@ -1,5 +1,12 @@
-import { FaHome } from "react-icons/fa";
+import { AiOutlineHome } from "react-icons/ai";
 
-export default function HomeIcon() {
-  return <FaHome />;
+export interface HomeIconProps {
+  size: number,
+  stroke: number
+}
+
+export default function HomeIcon(props: HomeIconProps) {
+  return (
+    <AiOutlineHome size={props.size} />
+  )
 };

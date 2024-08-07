@@ -5,7 +5,7 @@ import UserText from "../atoms/UserText";
 export default function(){
   return(
     <Link href="/users" className="flex gap-3 items-baseline px-4 py-2 hover:bg-black">
-      <UserIcon />
+      <UserIcon size={24} stroke={1}/>
       <UserText />
     </Link>
   )

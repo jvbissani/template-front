@@ -5,7 +5,7 @@ import HomeText from "../atoms/HomeText";
 export default function(){
   return(
     <Link href="/" className="flex gap-3 items-baseline px-4 py-2 hover:bg-black">
-      <HomeIcon />
+      <HomeIcon size={24} stroke={1}/>
       <HomeText />
     </Link>
   )
